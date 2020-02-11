@@ -1,0 +1,451 @@
+fileFormatVersion: 2
+guid: 768b9a85719cccd4c8321492921977f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2505013092511880521
+    second: Envi+Boat_0
+  - first:
+      213: -7211401714187722328
+    second: Envi+Boat_1
+  - first:
+      213: 4662037776426192270
+    second: Envi+Boat_2
+  - first:
+      213: 7083704378709408500
+    second: Envi+Boat_3
+  - first:
+      213: 6819750904314384883
+    second: Envi+Boat_4
+  - first:
+      213: 1651160552689531842
+    second: Envi+Boat_5
+  - first:
+      213: 4245054095550982414
+    second: Envi+Boat_6
+  - first:
+      213: -3766125774494949406
+    second: Envi+Boat_7
+  - first:
+      213: -4908086483339645609
+    second: Envi+Boat_8
+  - first:
+      213: -6526918266238896426
+    second: Envi+Boat_9
+  - first:
+      213: -7819469445465085705
+    second: Envi+Boat_10
+  - first:
+      213: 7649476101010013744
+    second: Envi+Boat_11
+  - first:
+      213: -3329701189792756653
+    second: Envi+Boat_12
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Envi+Boat_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 846
+        width: 422
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d2b8592ac0103469370643876b8f5a
+      internalID: -2505013092511880521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_1
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 949
+        width: 219
+        height: 235
+      alignment: 9
+      pivot: {x: 0.3429769, y: 0.078563154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510e6af267b61d041b57e802e0c74753
+      internalID: -7211401714187722328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_2
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 966
+        width: 220
+        height: 199
+      alignment: 9
+      pivot: {x: 0.48124334, y: 0.08526949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2738951048a4940bb67f73e058c594
+      internalID: 4662037776426192270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_3
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 970
+        width: 200
+        height: 195
+      alignment: 9
+      pivot: {x: 0.25928345, y: 0.07676219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e5f9e654a9d8541b53521e90848732
+      internalID: 7083704378709408500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_4
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 970
+        width: 210
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.11791032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc96910282fa4c4bac83bd2918b8331
+      internalID: 6819750904314384883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_5
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1084
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390cb89fc8e3ba44ea33ff744e25a38e
+      internalID: 1651160552689531842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 401
+        width: 133
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256da08a0e532024db340a0bd88e76b2
+      internalID: 4245054095550982414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 729
+        width: 159
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679e1344a1a8b294191b8e61b3b66ec5
+      internalID: -3766125774494949406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_8
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 590
+        width: 470
+        height: 281
+      alignment: 9
+      pivot: {x: 0.50877994, y: 0.38741273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ac7144b7c7a404ba9f5a3e8afaae0f
+      internalID: -4908086483339645609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_9
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 110
+        width: 782
+        height: 742
+      alignment: 9
+      pivot: {x: 0.8641092, y: 0.4388244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a65534eece4cd247b5df8482bb11380
+      internalID: -6526918266238896426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 480
+        width: 38
+        height: 159
+      alignment: 9
+      pivot: {x: 0.25, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4eabd830b023d4f9c98dd9853a3f8f
+      internalID: -7819469445465085705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_11
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 480
+        width: 37
+        height: 159
+      alignment: 9
+      pivot: {x: 0.75, y: 0.72}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ceb3ba8898a8b948b91cc108c72d552
+      internalID: 7649476101010013744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Envi+Boat_12
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 729
+        width: 151
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277aa6b1b8d8d994fabea567bdda5545
+      internalID: -3329701189792756653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
