@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
         if (collision.tag == "Player")
         {
             isChasing = true;
-            Debug.Log("发现目标");
+            //Debug.Log("发现目标");
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -35,7 +35,7 @@ public class EnemyController : MonoBehaviour
         if (collision.tag == "Player")
         {
             isChasing = false;
-            Debug.Log("目标逃脱");
+            //Debug.Log("目标逃脱");
         }
     }
     void Start()
