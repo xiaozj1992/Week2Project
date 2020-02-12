@@ -32,6 +32,7 @@ public class AnimationTest : MonoBehaviour
         }
         if (Input.GetKeyDown("e")) {
             manAni.Play("ManRow_R");
+            rightPadAni.Play("RightPad_T");
         }
     }
 }
