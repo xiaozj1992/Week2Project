@@ -7,6 +7,9 @@ TagManager:
   - Env
   - Enemy
   - Police
+  - Goal
+  - Big
+  - Small
   layers:
   - Default
   - TransparentFX

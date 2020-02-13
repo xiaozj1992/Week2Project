@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
     float speed = 1f;
     float smooth = 1f;
 
+    Rigidbody2D rb;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -40,12 +42,19 @@ public class EnemyController : MonoBehaviour
     }
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!isChasing)
+        {
+            var dir = Random.Range(0, 360);
+
+            var impulse = rb.inertia * Mathf.Deg2Rad * 1000*dir;
+            rb.AddTorque(impulse);
+            rb.AddForce(transform.up*Time.deltaTime*20);
+        }
     }
 }

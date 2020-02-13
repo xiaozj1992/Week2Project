@@ -13,9 +13,11 @@ public class UIController : MonoBehaviour
     public GameObject settingMenu;//设置窗口
     public GameObject[] childMenu;//子菜单窗口
 
+    public GameObject[] Anim;//动画合集
+
     void Start()
     {
-
+        Instantiate(Anim[0],Vector3.zero,Quaternion.identity);
 
         SetButtons();
     }
