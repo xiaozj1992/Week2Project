@@ -122,7 +122,8 @@ public class PlayerController : MonoBehaviour
         }
         if (Time.time > maxTime)
         {
-
+            Instantiate(AnimObject[4], Vector3.zero, Quaternion.identity);
+            isEnd = true;
         }
         if (isEnd)
         {
