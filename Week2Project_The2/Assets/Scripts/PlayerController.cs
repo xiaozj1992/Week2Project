@@ -7,79 +7,57 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
-    float speed = 100f;
+    float speed = 200f;
     float huaTime = 1f;
-    float degree = 90;
+    float degree = 180;
     float hp = 100;
     bool isPause = false;
 
-    //bool canLeft = true, canRight = true;
+    public event Hua HuaMid;
 
-    public event Hua HuaLeft;
-    public event Hua HuaRight;
-    public delegate void Hua(string dir, Vector3 v);
-
+    public delegate void Hua(Vector3 v);
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Global.isPause = false;
-        HuaLeft += HuaEvent;
-        HuaRight += HuaEvent;
-    }
 
+        HuaMid += HuaEvent;
+        HuaMid += HuaEvent;
+
+        foreach(var t in HuaMid.GetInvocationList())
+        {
+        Debug.Log(t.ToString());
+        }
+        
+    }
     //可放入外部
-    void HuaEvent(string dir, Vector3 v)
+    void HuaEvent(Vector3 v)
     {
 
-        if (dir == "left")
-        {
-            HuaLeft -= HuaEvent;
-            
-            Debug.Log("左边取消");
-
-            StartCoroutine(HuaJiangLeft(v));
-        }
-        if (dir == "right" )
-        {
-            HuaRight -= HuaEvent;
-            
-            Debug.Log("右边取消");
-            StartCoroutine(HuaJiangRight(v));
-        }
+        HuaMid -= HuaEvent;
+        StartCoroutine(HuaJiang(v));
     }
-    IEnumerator HuaJiangLeft(Vector3 v)
+    IEnumerator HuaJiang(Vector3 v)
     {
+        yield return new WaitForSeconds(huaTime / 2);
+        var impulse = rb.inertia * Mathf.Deg2Rad * degree;
         rb.AddRelativeForce(v * speed);
-        yield return new WaitForSeconds(huaTime);
-        HuaLeft += HuaEvent;
-        
-        Debug.Log("左边恢复");
-    }
-    IEnumerator HuaJiangRight(Vector3 v)
-    {
-        rb.AddRelativeForce(v * speed);
-        yield return new WaitForSeconds(huaTime);
-        HuaRight += HuaEvent;
-        
-        Debug.Log("右边恢复");
+        rb.AddTorque(impulse * (v.x * v.y > 0 ? 1 : -1) * (v.x == 0 ? 0 : 1));
+        yield return new WaitForSeconds(huaTime / 2);
+        HuaMid += HuaEvent;
     }
     //private void OnBecameInvisible()
     //{
     //    Debug.Log("隐藏");
     //}
-
-
     void OnCollisionEnter2D(Collision2D other)
     {
 
     }
-
     void OnTriggerEnter2D(Collider2D other)
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -87,46 +65,37 @@ public class PlayerController : MonoBehaviour
         {
             Global.Pause();
         }
-
     }
-    void Water()
-    {
-        var rate = UnityEngine.Random.Range(0, 2f);
-        rb.AddForce(Vector2.right * rate);
-    }
-
-
     void Move()
     {
-        var impulse = rb.inertia * Mathf.Deg2Rad * degree;
+        //var impulse = rb.inertia * Mathf.Deg2Rad * degree;
         if (Input.GetKey(KeyCode.Q))
         {
-            HuaLeft?.Invoke("left", new Vector2(1, -4));
-            //rb.AddRelativeForce(new Vector2(1, -4) * speed);
-            rb.AddTorque(-impulse);
+            HuaMid?.Invoke(new Vector2(1, -4).normalized);
+            //rb.AddTorque(-impulse);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            HuaLeft?.Invoke("left", new Vector2(1, 4));
-            //rb.AddRelativeForce(new Vector2(1, 4) * speed);
-            rb.AddTorque(impulse);
+            HuaMid?.Invoke(new Vector2(1, 4).normalized);
+            //rb.AddTorque(impulse);
         }
         if (Input.GetKey(KeyCode.E))
         {
-            HuaRight?.Invoke("right", new Vector2(-1, -4));
-            //rb.AddRelativeForce(new Vector2(-1, -4) * speed);
-            rb.AddTorque(impulse);
+            HuaMid?.Invoke(new Vector2(-1, -4).normalized);
+            //rb.AddTorque(impulse);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            HuaRight?.Invoke("right", new Vector2(-1, 4));
-            //rb.AddRelativeForce(new Vector2(-1, 4) * speed);
-            rb.AddTorque(-impulse);
+            HuaMid?.Invoke(new Vector2(-1, 4).normalized);
+            //rb.AddTorque(-impulse);
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            rb.AddRelativeForce(Vector2.up * speed);
+            HuaMid?.Invoke(Vector2.up);
         }
-
+        if (Input.GetKey(KeyCode.S))
+        {
+            HuaMid?.Invoke(Vector2.down);
+        }
     }
 }
